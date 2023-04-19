@@ -1,0 +1,59 @@
+---
+import Card from '../components/Card.astro';
+import skate from '../images/skate.png';
+import netflix from '../images/Netflix.png';
+import rick from '../images/Rick2.png';
+import fyesta from '../images/fyesta.png';
+import magicandy from '../images/magicandy.png';
+import beef from '../images/Beef.png';
+---
+
+<section class='pb-36'>
+  <h2 class='text-center text-3xl'>What I did</h2>
+  <div
+    class='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-1 gap-y-10 justify-items-center pt-10'
+  >
+    <Card
+      description='My first app in React, an everlasting memory of how it was to start programming.'
+      alt='Picture from a restaurant page'
+      photo={beef}
+      title='Beef-and-Meet'
+      href={'https://beef-and-meet.vercel.app'}
+    />
+    <Card
+      description='I tried restyling one of my favorite skateboard pages as an exercise, I learned soo much about dynamic routes in the process.'
+      alt='Picture from a skate website'
+      photo={skate}
+      title='Thrasher Magazine'
+      href={'https://skate-lake.vercel.app'}
+    />
+    <Card
+      description='I wanted to recreate the UI of something famous, so I chose Netflix. I was able to learn more about Next in the process.'
+      alt='Picture from a netflix-like app'
+      photo={netflix}
+      title='Netflix Clone'
+      href={'https://netflix-clone-mu-topaz.vercel.app'}
+    />
+    <Card
+      description='I developed an app with information on all characters from the Rick and Morty series using the public API.'
+      alt='Rick and morty web page'
+      photo={rick}
+      title='Rick And Morty Tracker'
+      href={'https://earth-c-137.vercel.app'}
+    />
+    <Card
+      description='A personal organization project, fully open source with the intention of learning in public.'
+      alt='Picture from a landing page'
+      photo={fyesta}
+      title='Fyesta'
+      href={'https://fyesta.vercel.app'}
+    />
+    <Card
+      description='An e-commerce for a bakery, my first full-stack project created in collaboration with a friend.'
+      alt='Foto de um modal com um video de fundo'
+      photo={magicandy}
+      title='Magicandy'
+      href={'https://magicandy.vercel.app'}
+    />
+  </div>
+</section>
