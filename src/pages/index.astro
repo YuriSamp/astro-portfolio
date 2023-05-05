@@ -5,33 +5,12 @@ import Skills from '../components/Skills.astro';
 import About from '../components/About.astro';
 import Footer from '../components/Footer.astro';
 import Introduction from '../components/Introduction.astro';
+import Header from '../components/Header.astro';
 ---
 
 <Layout title="Yuri's Portfolio">
   <main class='px-10 sm:px-20 md:px-24 xl:px-44 2xl:px-64'>
-    <header class='flex items-center justify-between py-6'>
-      <h1 class='text-2xl'>Palast.dev</h1>
-      <nav>
-        <ul class='flex gap-9'>
-          <li>
-            <a
-              href=''
-              class='hover:border-black border-b-[1px] border-transparent py-1 cursor-pointer text-lg'
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href=''
-              class='hover:border-black border-b-[1px] border-transparent py-1 cursor-pointer text-lg'
-            >
-              Blog
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <Header />
     <Introduction />
     <ShowCase />
     <Skills />
