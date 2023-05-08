@@ -4,12 +4,11 @@
 
 here I combine 2 of my most loved design trends: minimalistic and neo-brutalism using Astro framework to build UI.
 
-I Choose Astro to build my portfolio mostly because i want to expose myself to new pattern of code, before i just build things with jsx using react
-
+I Choosed Astro to build my portfolio mostly because i want to expose myself to new pattern of code, before i just build things with jsx using react
 
 ## Running Locally
 
-If tou want to run locally you will need a dev.to key in .env 
+If tou want to run locally you will need a dev.to key in .env
 
 ### Cloning the repository the local machine.
 
@@ -29,4 +28,4 @@ Then, run the application in the command line and it will be available at `http:
 
 ```bash
 npm run dev
-``` 
+```
