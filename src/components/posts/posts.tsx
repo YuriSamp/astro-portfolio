@@ -11,7 +11,7 @@ const response = await fetch('https://dev.to/api/articles/me/published', {
 const data: PostTypes[] = await response.json();
 
 export function Posts() {
-  const pagination = new Array(Math.floor(data.length / 4 + 1)).fill('')
+  const pagination = new Array(Math.ceil(data.length / 4)).fill('')
   const [page, setPage] = useState<number>(0)
 
   return (
