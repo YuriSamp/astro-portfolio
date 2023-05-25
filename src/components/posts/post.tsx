@@ -12,7 +12,7 @@ export function Post({ title, description, tag_list, cover_image, url }: props) 
         <div className='px-6 py-6'>
           <h3 className='text-left text-3xl'>{title}</h3>
           <div className='flex items-center justify-between'>
-            <p className='w-full py-8'>
+            <p className='w-full py-8 text-xl'>
               {description.slice(0, 400)}
             </p>
           </div>
