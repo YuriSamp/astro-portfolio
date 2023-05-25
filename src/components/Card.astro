@@ -16,7 +16,7 @@ const { href, description, photo, title, alt } = Astro.props;
   <a href={href} target='_blank'>
     <div class='flex flex-col gap-3 p-4 text-center z-10'>
       <img src={photo} alt={alt} class='w-72 border rounded-lg' />
-      <h3 class='text-2xl'>{title}</h3>
+      <h3 class='text-2xl font-bold'>{title}</h3>
       <p class='w-72 px-5'>{description}</p>
     </div>
   </a>

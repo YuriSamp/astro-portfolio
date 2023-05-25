@@ -16,7 +16,7 @@ export function Posts() {
 
   return (
     <section className='flex flex-col pb-10'>
-      <h2 className='text-3xl py-4 text-center'>My Articles</h2>
+      <h2 className='text-4xl py-4 mb-10 text-center'>My Articles</h2>
       <div
         className='grid xl:grid-cols-2 gap-x-52 gap-y-10 place-items-center pb-14 min-h-[670px]'
       >
