@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import { PostTypes } from '../../interface/posts';
-import { Button } from './button';
 import { Post } from './post';
 
 const response = await fetch('https://dev.to/api/articles/me/published', {
@@ -11,8 +9,6 @@ const response = await fetch('https://dev.to/api/articles/me/published', {
 const data: PostTypes[] = await response.json();
 
 export function Posts() {
-  const pagination = new Array(Math.ceil(data.length / 4)).fill('')
-  const [page, setPage] = useState<number>(0)
 
   return (
     <section className='flex flex-col pb-10'>
@@ -20,7 +16,7 @@ export function Posts() {
       <div
         className='grid xl:grid-cols-2 gap-x-52 gap-y-10 place-items-center pb-14 min-h-[670px]'
       >
-        {data.slice(0 + (4 * page), 4 * (page + 1)).map((article, i) => (
+        {data.map((article) => (
           <Post
             description={article.description}
             title={article.title}
@@ -31,16 +27,6 @@ export function Posts() {
           />
         ))}
       </div>
-      <menu className='flex justify-center gap-4'>
-        {pagination.map((_, i) => (
-          <Button
-            key={i}
-            index={i}
-            setPage={setPage}
-          />
-        ))
-        }
-      </menu>
     </section>
   )
 }

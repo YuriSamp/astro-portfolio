@@ -28,6 +28,5 @@ export function Post({ title, description, tag_list, cover_image, url }: props) 
         </div>
       </a>
     </article>
-
   )
 }
